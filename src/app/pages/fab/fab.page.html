@@ -1,0 +1,18 @@
+<app-header title="fab"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Tareas</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let task of tasks" >
+      <ion-label>{{task.task}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="createTask()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

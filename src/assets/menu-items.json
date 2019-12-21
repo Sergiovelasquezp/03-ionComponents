@@ -1,0 +1,52 @@
+[
+    { 
+        "icon": "appstore",
+        "name": "Alert", 
+        "url": "/alert" 
+    },
+    { 
+        "icon": "american-football",
+        "name": "Action Sheet",
+        "url": "/action-sheet" 
+    },
+    { 
+        "icon": "beaker",
+        "name": "Avatar",
+        "url": "/avatar" 
+    },
+    { 
+        "icon": "information-circle",
+        "name": "Button",
+        "url": "/buttons" 
+    },
+    { 
+        "icon": "journal",
+        "name": "Cards",
+        "url": "/cards" 
+    },
+    { 
+        "icon": "checkbox",
+        "name": "Checkboxes",
+        "url": "/checkboxes" 
+    },
+    { 
+        "icon": "calendar",
+        "name": "Date Time",
+        "url": "/datetime" 
+    },
+    { 
+        "icon": "add",
+        "name": "Fab",
+        "url": "/fab" 
+    },
+    { 
+        "icon": "grid",
+        "name": "Grid",
+        "url": "/grid" 
+    },
+    { 
+        "icon": "arrow-down",
+        "name": "Infinite Scroll",
+        "url": "/infinite-scroll" 
+    }
+]
