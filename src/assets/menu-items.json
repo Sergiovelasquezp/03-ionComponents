@@ -48,5 +48,20 @@
         "icon": "arrow-down",
         "name": "Infinite Scroll",
         "url": "/infinite-scroll" 
+    },
+    { 
+        "icon": "hammer",
+        "name": "Inputs",
+        "url": "/inputs" 
+    },
+    { 
+        "icon": "hammer",
+        "name": "Lists",
+        "url": "/list" 
+    },
+    { 
+        "icon": "hammer",
+        "name": "Item Sliding",
+        "url": "/ion-item-sliding" 
     }
 ]

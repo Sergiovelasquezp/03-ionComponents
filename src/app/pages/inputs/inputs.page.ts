@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inputs.page.scss'],
 })
 export class InputsPage implements OnInit {
-
-  constructor() { }
+  user = {
+    email: '',
+    password: '',
+  }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
+  onSubmit() {
+    console.log(this.user);
+  }
+
 
 }

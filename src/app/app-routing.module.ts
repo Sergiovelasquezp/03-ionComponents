@@ -58,7 +58,11 @@ const routes: Routes = [
   {
     path: 'list-reorder',
     loadChildren: () => import('./pages/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
+  },  {
+    path: 'ion-item-sliding',
+    loadChildren: () => import('./pages/ion-item-sliding/ion-item-sliding.module').then( m => m.IonItemSlidingPageModule)
   },
+
 ];
 
 @NgModule({

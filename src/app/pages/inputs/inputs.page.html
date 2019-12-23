@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inputs</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Inputs"></app-header>
 
 <ion-content>
-
+  
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+ <ion-list>
+   <ion-list-header>
+     Login
+   </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input name="email" type="email" [(ngModel)]="user.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input name="password" type="password" [(ngModel)]="user.password" minlength="5" ></ion-input>
+    </ion-item>
+  </ion-list> 
+  <ion-button [disabled]="form.invalid" type="submit" color="primary" expand="block" shape="round">
+    Enviar
+  </ion-button>
+</form>
+ 
 </ion-content>
