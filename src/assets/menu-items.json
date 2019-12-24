@@ -68,5 +68,10 @@
         "icon": "hammer",
         "name": "Loading",
         "url": "/loading" 
+    },
+    { 
+        "icon": "desktop",
+        "name": "Modal",
+        "url": "/modal" 
     }
 ]
