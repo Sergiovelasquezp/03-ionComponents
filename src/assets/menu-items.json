@@ -55,13 +55,18 @@
         "url": "/inputs" 
     },
     { 
-        "icon": "hammer",
+        "icon": "filing",
         "name": "Lists",
         "url": "/list" 
     },
     { 
         "icon": "hammer",
-        "name": "Item Sliding",
-        "url": "/ion-item-sliding" 
+        "name": "List Reorder",
+        "url": "/list-reorder" 
+    },
+    { 
+        "icon": "hammer",
+        "name": "Loading",
+        "url": "/loading" 
     }
 ]

@@ -1,9 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>listReorder</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="List Reorder"></app-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-reorder-group disabled="false" (ionItemReorder)="completeReorder($event)">
+      <ion-item *ngFor="let user of users" >
+        <ion-label>
+          {{user.name}}
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  
 </ion-content>

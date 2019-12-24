@@ -13,4 +13,8 @@ export class DataService {
     return this.HTTP.get<MenuItems[]>('/assets/menu-items.json');
   }
 
+  getUsers() {
+    return this.HTTP.get('https://jsonplaceholder.typicode.com/users');
+  }
+
 }

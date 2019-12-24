@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'ion-item-sliding',
     loadChildren: () => import('./pages/ion-item-sliding/ion-item-sliding.module').then( m => m.IonItemSlidingPageModule)
   },
+  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
+  },
 
 ];
 
