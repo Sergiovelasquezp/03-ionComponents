@@ -1,11 +1,24 @@
 <ion-header no-border>
   <ion-toolbar>
     <ion-title>Modal info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="exitModal()" fill="clear" color="primary"> Close</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-button expand="block" (click)="exitModal()">
-  Salir del modal
-</ion-button>
+  <ion-list>
+    <ion-list-header>
+      Nombre y pais
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <h4>{{name}}</h4>
+      </ion-label>
+      <ion-note slot="end">
+        {{country}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
 </ion-content>

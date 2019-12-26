@@ -24,7 +24,9 @@ export class ModalPage implements OnInit {
         country: 'Venezuela'
       }
     });
-    return await modal.present();
+    await modal.present();
+    const { data } = await modal.onDidDismiss();
+    console.log(data);
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -7,6 +7,8 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal-info.page.scss'],
 })
 export class ModalInfoPage implements OnInit {
+  @Input() name: string;
+  @Input() country: string;
 
   constructor(
     private modalController: ModalController
@@ -16,7 +18,10 @@ export class ModalInfoPage implements OnInit {
   }
   
   exitModal() {
-    this.modalController.dismiss();
+    this.modalController.dismiss({
+      jobOrder: '999202133',
+      jobId: '123455667'
+    });
 
   }
 
